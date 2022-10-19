@@ -18,8 +18,6 @@ public class LoginPage {
     @FindBy(how = How.ID, using = "passwordNext")
     private SelenideElement forwardButton2;
 
-    @FindBy(how = How.XPATH, using = "//*[@class = 'gb_A gb_La gb_f']")
-    private SelenideElement accountButton;
 
 
     public void inputLogin(String username) {
@@ -34,7 +32,6 @@ public class LoginPage {
 
     public void clickForwardButton2() {forwardButton2.click(); }
 
-    public void clickAccountButton () {accountButton.click(); }
 
 
 

@@ -16,7 +16,6 @@ public class LoginTests extends BaseWebTests {
         loginPage.clickForwardButton();
         loginPage.inputPassword("passfordavid");
         loginPage.clickForwardButton2();
-        //loginPage.clickAccountButton();
         $(By.xpath("//*[@ class = 'gb_A gb_La gb_f']")).shouldHave(Condition.attribute("aria-label", "Google Account: david linch  \n" +
                 "(davidnumberonetest@gmail.com)"));
     }
